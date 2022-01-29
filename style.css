@@ -1,4 +1,517 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.fixed-width{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* Header Section  */
+.header{
+    background-color: #000;
+    padding: 5px 0;
+}
+.header-logo{
+    width: 20%;
+}
+.header-logo img{
+    width: 100px;
+}
+.header-menu{
+    width: 70%;
+}
+
+
+
+
+
+/* Header Menu */
+.header-menu{}
+.header-menu ul{
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+
+    position: relative;
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 23px;
+    line-height: 66px;
+}
+.header-menu ul li a:hover{}
+
+
+.header-menu ul li:after{
+    content: '';
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+.header-menu ul li:hover::after{
+    width: 55%;
+}
+
+
+
+
+/* Dropdown Menu */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    text-align: left;
+    background-color: #000;
+    border-top: 10px solid rgba(255, 255, 255, 0);
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.header-menu ul li ul li a{
+    display: block;
+}
+.header-menu ul li ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.header-menu ul li ul li::after{
+    content: '';
+    width: 0;
+    background-color: #000;
+}
+.header-menu ul li ul li:hover::after{
+    width: 35%;
+}
+
+
+
+
+
+
+/* Dropdown Menu Hover */
+.header-menu ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    top: 120%;
+    transition: .4s;
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1  ;
+    top: 100%;
+    left: 0;
+}
+
+
+
+
+
+/* Banner Section  */
+.banner{
+    background: url(https://i.ibb.co/F5YDqmy/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat top center ;
+    background-size: cover;
+    padding: 240px 0;
+}
+.banner-content{}
+.banner-content h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.banner-content p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.banner-btn1{
+    display: inline-block;
+    padding: 19px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    transition: .4s;
+}
+.banner-btn2{
+    display: inline-block;
+    padding: 20px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+
+    transition: .4s;
+}
+
+
+
+
+/* Banner Hover */
+.banner-btn1:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.banner-btn2:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* About Section */
+.about{
+    background-color: #87A471;
+    padding: 50px 0;
+}
+.about-heading{}
+.about-heading h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    color: #E8DFDA;
+    text-shadow: 1px 1px 4px #E8DFDA;
+    position: relative;
+    margin-bottom: 30px;
+}
+.about-heading h1::after{
+    content: '';
+    width: 24%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    box-shadow: 1px 1px 2px #E8DFDA;
+}
+
+
+
+
+.about-content{}
+.about-content-left{
+    width: 60%;
+}
+.about-content-left p{
+    color: #E8DFDA;
+    padding: 0 100px ;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 80px;
+}
+
+.about-content-right{
+    width: 30%;
+}
+
+
+
+
+
+
+/* Service Section  */
+.service{
+    background-color: #606A64;
+    padding: 60px 0;
+}
+.service-top{
+    max-width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.service-top h1{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 1px 1px 4px #E8DFDA;
+    position: relative;
+    margin-bottom: 30px;
+}
+.service-top h1::after{
+    content: '';
+    width: 45%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    left: 28%;
+    box-shadow: 1px 1px 2px #E8DFDA;
+}
+.service-top h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.service-top p{
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(228, 220, 220);
+}
+
+
+.service-bottom{}
+.service-box{
+    width: 28.3%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-right: 7%;
+    border-radius: 15px;
+}
+.service-box:last-child{
+    margin-right: 0;
+}
+.service-item{}
+
+.service-item span{
+    display: inline-block;
+    color: #00BC9C;
+    font-size: 50px;
+    margin-right: 10px;
+    height: 130px;
+}
+.service-item h3{
+    font-size: 25px;
+    color: rgb(119, 115, 115);
+    margin-bottom: 20px;
+}
+.service-item p{
+    color: rgb(150, 143, 143);
+    line-height: 1.7em;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Portfolio Section */
+.portfolio{
+    padding: 80px 0;
+    background-color: #87A471;
+}
+
+.portfolio-top{}
+.portfolio-top h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.portfolio-top p{
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(228, 220, 220);
+}
+
+.portfolio-mid{
+    padding: 0 30px;
+    margin-top: 35px;
+}
+.portfolio-mid-content{
+    width: 47%;
+    border: 1px solid #fff;
+}
+.portfolio-mid-content img{
+    width: 100%;
+}
+.portfolio-mid-content h3{
+    font-size: 18px;
+    color: #506A85;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.portfolio-mid-content p{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.portfolio-bottom{
+    padding: 0 30px;
+    margin-top: 45px;
+}
+.portfolio-bottom-content{
+    width: 23.5%;
+    margin-right: 2%;
+}
+.portfolio-bottom-content:last-child{
+    margin-right: 0;
+}
+.portfolio-bottom-content img{}
+
+
+
+
+
+/* Team Section  */
+.team-section{
+    background-color: #5B9776;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.team-section-top{}
+.team-section-top h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+.team-section-top h1::after{
+    content: '';
+    width: 23%;
+    height: 2px;
+    background-color: rgb(233, 222, 222);
+    position: absolute;
+    top: 110%;
+    left: 38.5%;
+    box-shadow: 1px 1px 2px #E8DFDA;
+}
+
+.team-section-bottom{
+    padding: 50px 0;
+    margin-top: 30px;
+}
+
+.team-members{
+    width: 32%;
+    margin-right: 2%;
+}
+.team-members:last-child{
+    margin-right: 0;
+}
+.team-members img{}
+.team-members ul{
+    text-align: center;
+    margin-top: 5px;
+}
+.team-members ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.team-members ul li a{
+    display: inline-block;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 35px;
+    transition: .4s;
+}
+.team-members ul li:last-child a{
+    margin-right: 0;
+}
+.team-members ul li a:hover{
+    color: yellow;
+}
+
+
+
+
+/* Contact Section  */
+.contact{
+    background-color: #606A64;
+    padding: 80px 0;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(240, 230, 230);
+    position: relative;
+    margin-bottom: 20px;
+}
+.contact p{
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(214, 203, 203);
+    width: 60%;
+    margin: 0 auto;
+}
+.contact a{
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: #00BC9C;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: .4s;
+}
+.contact a:hover{
+    background-color: #4382bd;
+}
+
+
+
+
+/* Footer Section */
+.footer{
+    background-color: #000;
+    padding: 20px 0;
+}
+.footer p{
+    color: #fff;
+    font-size: 18px;
 }
